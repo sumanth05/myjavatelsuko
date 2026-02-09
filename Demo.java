@@ -852,3 +852,57 @@ import java.lang.classfile.instruction.StackInstruction;
 
 //     }
 // }
+
+////COnstructors////
+
+class Human
+{
+    private int age;
+    private String name;
+
+    public Human()
+    {
+        //System.out.println("In Constructor");
+        age = 12;
+        name = "john";
+    }
+
+    public int getAge() 
+    {
+        return age;
+    }
+    public void setAge(int a) 
+    {
+        Human obj1 = new Human();
+        obj1.age = age;
+    }
+    public String getName() 
+    {
+        return name;
+    }
+    public void setName(String n) 
+    {
+        n = name;
+    }
+
+    
+
+
+}
+
+public class Demo
+{
+    public static void main(String a[])
+    {
+        Human obj = new Human();
+        Human obj1 = new Human();
+        System.out.println(obj.getName() + " : " + obj.getAge());
+
+
+        // obj.setAge(30);
+        // obj.setName("Sumanth");
+
+        // System.out.println(obj.getName() + " : " + obj.getAge());
+
+    }
+}
